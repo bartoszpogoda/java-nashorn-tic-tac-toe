@@ -5,6 +5,7 @@ import game.model.BoardEntity;
 import game.model.BoardPosition;
 
 import java.util.Optional;
+import java.util.stream.Stream;
 
 public class WinConditionChecker {
 
@@ -16,6 +17,8 @@ public class WinConditionChecker {
     };
 
     private final int IN_LINE_TO_WIN = 5;
+
+    private NextToCheckResolverFactory nextToCheckResolverFactory = NextToCheckResolverFactory.getInstance();
 
     public Optional<BoardEntity> getWinner(Board board) {
 
@@ -34,34 +37,23 @@ public class WinConditionChecker {
     }
 
     private boolean isWinner(Board board, BoardEntity entity, BoardPosition boardPosition) {
-        NextToCheckResolverFactory nextToCheckResolverFactory = NextToCheckResolverFactory.getInstance();
+        return Stream.of(DIRECTIONS_TO_CHECK).map(direction -> countInLine(direction, board, boardPosition, entity)).anyMatch(count -> count >= IN_LINE_TO_WIN);
+    }
 
-        for (CheckDirection direction : DIRECTIONS_TO_CHECK) {
+    private int countInLine(CheckDirection direction, Board board, BoardPosition startPosition, BoardEntity entity) {
 
-            NextToCheckResolver nextToCheckResolver = nextToCheckResolverFactory.forDirection(direction);
+        NextToCheckResolver nextToCheckResolver = nextToCheckResolverFactory.forDirection(direction);
 
-            int linedCount = 1;
+        int countInLine = 0;
+        Optional<BoardPosition> currentPositionOpt = Optional.of(startPosition);
 
-            Optional<BoardPosition> nextPositionOpt = nextToCheckResolver.resolve(board, boardPosition);
+        while (currentPositionOpt.isPresent() && board.getEntityAt(currentPositionOpt.get()).equals(entity)) {
+            countInLine++;
 
-            while (nextPositionOpt.isPresent()) {
-                BoardPosition nextPosition = nextPositionOpt.get();
-                BoardEntity entityAt = board.getEntityAt(nextPosition);
-
-                if (entityAt.equals(entity)) {
-                    linedCount++;
-
-                    if (linedCount >= IN_LINE_TO_WIN) {
-                        return true;
-                    }
-                } else {
-                    break;
-                }
-
-                nextPositionOpt = nextToCheckResolver.resolve(board, nextPosition);
-            }
+            currentPositionOpt = nextToCheckResolver.resolve(board, currentPositionOpt.get());
         }
-        return false;
+
+        return countInLine;
     }
 
 }
