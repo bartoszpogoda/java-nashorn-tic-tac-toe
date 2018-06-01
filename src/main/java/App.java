@@ -1,13 +1,11 @@
-import game.model.Board;
-import game.wincondition.WinConditionChecker;
+import javax.script.ScriptException;
+import java.io.FileNotFoundException;
 
 public class App {
 
-    public static void main(String[] args) {
-        Board board = new Board(5);
+    public static void main(String[] args) throws FileNotFoundException, ScriptException {
 
-        WinConditionChecker winConditionChecker = new WinConditionChecker();
-        winConditionChecker.getWinner(board);
+        System.out.println("Application under development.");
 
     }
 

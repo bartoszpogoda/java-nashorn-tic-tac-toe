@@ -58,4 +58,15 @@ public class BoardMocks {
 
         return boardMock;
     }
+
+    public static Board getFilledWithOExceptFor1on1FieldEmpty() {
+        Board boardMock = Mockito.mock(Board.class);
+
+        when(boardMock.getSize()).thenReturn(5);
+
+        when(boardMock.getEntityAt(any())).thenReturn(BoardEntity.O);
+        when(boardMock.getEntityAt(new BoardPosition(1, 1))).thenReturn(BoardEntity.EMPTY);
+
+        return boardMock;
+    }
 }
