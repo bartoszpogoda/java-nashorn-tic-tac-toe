@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a71a306-e4b7-4f78-bd6e-6775e0449ba9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/exception/GameException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/move/MoveStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/move/MoveStrategyFromJSFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/move_strategies/randomStrategy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/game/move/RandomMoveStrategyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gui/GameView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gui/GameView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gui/board/BoardCanvas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gui/event/BoardFieldClicked.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gui/event/BoardFieldClickedListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/GameManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/drawcondition/DrawConditionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/drawcondition/DrawConditionChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/exception/GameException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/exception/GameException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/model/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/model/BoardPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/model/BoardPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/game/drawcondition/DrawConditionCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/game/drawcondition/DrawConditionCheckerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/game/wincondition/mock/BoardMocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/game/wincondition/mock/BoardMocks.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,11 +33,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="WinConditionChecker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/game/wincondition/WinConditionChecker.java">
+      <file leaf-file-name="GameManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/GameManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1176">
-              <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+            <state relative-caret-position="288">
+              <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1042#1043#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/model/Board.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,8 +62,8 @@
       <file leaf-file-name="RandomMoveStrategyTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/game/move/RandomMoveStrategyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="200">
+              <caret line="19" column="100" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="100" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,11 +71,62 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="randomStrategy.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/move_strategies/randomStrategy.js">
+      <file leaf-file-name="BoardPosition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/model/BoardPosition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="68" lean-forward="true" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+            <state relative-caret-position="277">
+              <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/GameView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-279">
+              <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1943#1944#0" expanded="true" />
+                <element signature="e#1989#1990#0" expanded="true" />
+                <element signature="e#2037#2038#0" expanded="true" />
+                <element signature="e#2085#2086#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoardFieldClicked.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/event/BoardFieldClicked.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#380#381#0" expanded="true" />
+                <element signature="e#416#417#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoardFieldClickedListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/event/BoardFieldClickedListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoardCanvas.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/board/BoardCanvas.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,41 +134,8 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="36" lean-forward="true" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoveStrategy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/game/move/MoveStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoveStrategyFromJSFile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/game/move/MoveStrategyFromJSFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/game/exception/GameException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="105">
+              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -104,8 +143,8 @@
       <file leaf-file-name="BoardMocks.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/game/wincondition/mock/BoardMocks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="61" column="61" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="61" />
+            <state relative-caret-position="870">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,9 +157,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="JavaScript File" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="FxmlFile" />
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -129,6 +170,7 @@
     <findStrings>
       <find>package game\.wincondition\;\n\npublic enum CheckDirection \{\n        DIAGONAL_TO_BOTTOM_RIGHT\,\n        DIAGONAL_TO_BOTTOM_LEFT\,\n        LEFT_TO_RIGHT\,\n        TOP_TO_BOTTOM\n\n\}\n</find>
       <find>map</find>
+      <find>GameView</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -150,8 +192,6 @@
         <option value="$PROJECT_DIR$/src/main/java/game/WinConditionChecker.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/wincondition/CheckDirection.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/wincondition/NextPositionToCheckResolver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/game/model/Board.java" />
-        <option value="$PROJECT_DIR$/src/main/java/game/model/BoardPosition.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/wincondition/NextToCheckResolverFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/game/wincondition/WinConditionCheckerTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -162,13 +202,26 @@
         <option value="$PROJECT_DIR$/src/main/java/game/MoveStrategy.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/move/MoveStrategyFromJS.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/move/MoveStrategyFromJSFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/game/exception/GameException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/game/GameManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/move/MoveStrategy.java" />
         <option value="$PROJECT_DIR$/src/test/java/game/move/RandomMoveTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/move_strategies/randomStrategy.js" />
-        <option value="$PROJECT_DIR$/src/test/java/game/wincondition/mock/BoardMocks.java" />
         <option value="$PROJECT_DIR$/src/test/java/game/move/RandomMoveStrategyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/exception/GameException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/GameState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/drawcondition/DrawConditionChecker.java" />
+        <option value="$PROJECT_DIR$/src/test/java/game/wincondition/mock/BoardMocks.java" />
+        <option value="$PROJECT_DIR$/src/test/java/game/drawcondition/DrawConditionCheckerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/Abc.form" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/Test.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/Apps.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/GameView.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/event/BoardFieldClickedListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/event/BoardFieldClicked.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/model/BoardPosition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/model/Board.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/GameManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/board/BoardCanvas.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/GameView.java" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
       </list>
     </option>
@@ -201,8 +254,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,8 +293,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javanashorntictactoe" type="b2602c69:ProjectViewProjectNode" />
@@ -251,8 +301,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="board" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javanashorntictactoe" type="b2602c69:ProjectViewProjectNode" />
@@ -260,17 +310,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="move" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javanashorntictactoe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javanashorntictactoe" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="wincondition" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javanashorntictactoe" type="b2602c69:ProjectViewProjectNode" />
@@ -315,6 +356,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="drawcondition" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javanashorntictactoe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javanashorntictactoe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="move" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -340,7 +390,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -348,6 +400,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/SceneBuilder/SceneBuilder.exe" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -355,6 +408,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="game.drawcondition" />
       <recent name="game.wincondition" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -376,7 +430,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RandomMoveStrategyTest.shouldGenerateProperMoveWhenOnlyOneMoveIsValid">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="javanashorntictactoe" />
@@ -385,19 +439,59 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="RandomMoveStrategyTest.shouldGenerateProperMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in javanashorntictactoe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javanashorntictactoe" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="DrawConditionCheckerTest.shouldGiveCorrectAnswerWhenDraw" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javanashorntictactoe" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="game.move.*" />
+          <option name="PATTERN" value="game.drawcondition.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="game.move" />
-      <option name="MAIN_CLASS_NAME" value="game.move.RandomMoveStrategyTest" />
-      <option name="METHOD_NAME" value="shouldGenerateProperMove" />
+      <option name="PACKAGE_NAME" value="game.drawcondition" />
+      <option name="MAIN_CLASS_NAME" value="game.drawcondition.DrawConditionCheckerTest" />
+      <option name="METHOD_NAME" value="shouldGiveCorrectAnswerWhenDraw" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="DrawConditionCheckerTest.shouldGiveCorrectAnswerWhenNotDraw" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javanashorntictactoe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game.drawcondition.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="game.drawcondition" />
+      <option name="MAIN_CLASS_NAME" value="game.drawcondition.DrawConditionCheckerTest" />
+      <option name="METHOD_NAME" value="shouldGiveCorrectAnswerWhenNotDraw" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -421,52 +515,6 @@
       <option name="PACKAGE_NAME" value="game.move" />
       <option name="MAIN_CLASS_NAME" value="game.move.RandomMoveStrategyTest" />
       <option name="METHOD_NAME" value="shouldGenerateProperMoveWhenOnlyOneMoveIsValid" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="WinConditionCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javanashorntictactoe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="game.wincondition.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="game.wincondition" />
-      <option name="MAIN_CLASS_NAME" value="game.wincondition.WinConditionCheckerTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="WinConditionCheckerTest.getWinnerXDiagonal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javanashorntictactoe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="game.wincondition.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="game.wincondition" />
-      <option name="MAIN_CLASS_NAME" value="game.wincondition.WinConditionCheckerTest" />
-      <option name="METHOD_NAME" value="getWinnerXDiagonal" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -516,19 +564,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.App" />
-      <item itemvalue="JUnit.WinConditionCheckerTest.getWinnerXDiagonal" />
-      <item itemvalue="JUnit.WinConditionCheckerTest" />
-      <item itemvalue="JUnit.RandomMoveStrategyTest.shouldGenerateProperMove" />
       <item itemvalue="JUnit.RandomMoveStrategyTest.shouldGenerateProperMoveWhenOnlyOneMoveIsValid" />
+      <item itemvalue="JUnit.All in javanashorntictactoe" />
+      <item itemvalue="JUnit.DrawConditionCheckerTest.shouldGiveCorrectAnswerWhenDraw" />
+      <item itemvalue="JUnit.DrawConditionCheckerTest.shouldGiveCorrectAnswerWhenNotDraw" />
+      <item itemvalue="Application.App" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RandomMoveStrategyTest.shouldGenerateProperMoveWhenOnlyOneMoveIsValid" />
-        <item itemvalue="JUnit.RandomMoveStrategyTest.shouldGenerateProperMove" />
         <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.WinConditionCheckerTest" />
-        <item itemvalue="JUnit.WinConditionCheckerTest.getWinnerXDiagonal" />
+        <item itemvalue="JUnit.DrawConditionCheckerTest.shouldGiveCorrectAnswerWhenNotDraw" />
+        <item itemvalue="JUnit.DrawConditionCheckerTest.shouldGiveCorrectAnswerWhenDraw" />
+        <item itemvalue="JUnit.All in javanashorntictactoe" />
+        <item itemvalue="JUnit.RandomMoveStrategyTest.shouldGenerateProperMoveWhenOnlyOneMoveIsValid" />
       </list>
     </recent_temporary>
   </component>
@@ -544,20 +592,12 @@
       <updated>1527776283753</updated>
       <workItem from="1527776289996" duration="11367000" />
       <workItem from="1527880915613" duration="253000" />
-      <workItem from="1527881676258" duration="6157000" />
+      <workItem from="1527881676258" duration="6769000" />
+      <workItem from="1527973126287" duration="7009000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WinConditionCheckerTest - 2018.06.01 at 21h 41m 26s.xml">
-      <configuration name="WinConditionCheckerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RandomMoveStrategyTest_shouldGenerateProperMove - 2018.06.01 at 23h 17m 57s.xml">
-      <configuration name="RandomMoveStrategyTest.shouldGenerateProperMove" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RandomMoveStrategyTest_shouldGenerateProperMove - 2018.06.01 at 23h 26m 23s.xml">
-      <configuration name="RandomMoveStrategyTest.shouldGenerateProperMove" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RandomMoveStrategyTest_shouldGenerateProperMove - 2018.06.01 at 23h 26m 31s.xml">
       <configuration name="RandomMoveStrategyTest.shouldGenerateProperMove" configurationId="JUnit" />
     </history-entry>
@@ -579,9 +619,18 @@
     <history-entry file="RandomMoveStrategyTest_shouldGenerateProperMoveWhenOnlyOneMoveIsValid - 2018.06.01 at 23h 33m 45s.xml">
       <configuration name="RandomMoveStrategyTest.shouldGenerateProperMoveWhenOnlyOneMoveIsValid" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_javanashorntictactoe - 2018.06.01 at 23h 36m 58s.xml">
+      <configuration name="All in javanashorntictactoe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DrawConditionCheckerTest_shouldGiveCorrectAnswerWhenDraw - 2018.06.02 at 23h 17m 52s.xml">
+      <configuration name="DrawConditionCheckerTest.shouldGiveCorrectAnswerWhenDraw" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DrawConditionCheckerTest_shouldGiveCorrectAnswerWhenNotDraw - 2018.06.02 at 23h 18m 24s.xml">
+      <configuration name="DrawConditionCheckerTest.shouldGiveCorrectAnswerWhenNotDraw" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17777000" />
+    <option name="totallyTimeSpent" value="25398000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -606,12 +655,13 @@
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.3296582" />
-      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.3296582" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.3296582" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.3296582" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49944875" visible="true" weight="0.1796875" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49944875" visible="true" weight="0.21979167" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="7" />
       <window_info id="Structure" order="6" sideWeight="0.5005513" side_tool="true" weight="0.1796875" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info id="UI Designer" order="1" />
@@ -619,43 +669,42 @@
       <window_info id="Favorites" order="3" sideWeight="0.50164473" side_tool="true" weight="0.1796875" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.39911798" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="REST Client" order="0" weight="0.44211686" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="REST Client" order="0" weight="0.44211686" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="7" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="bottom" id="Find" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="bottom" id="REST Client" order="0" weight="0.44211686" />
       <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.3296582" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.3296582" />
       <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49944875" weight="0.1796875" />
       <window_info id="Structure" order="6" sideWeight="0.5005513" side_tool="true" weight="0.1796875" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="12" weight="0.3296582" />
-      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.3296582" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info id="UI Designer" order="1" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.39911798" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="REST Client" order="0" weight="0.44211686" />
+      <window_info anchor="bottom" id="Find" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.39911798" />
+      <window_info id="UI Designer" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.3296582" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="4" weight="0.3296582" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="5" weight="0.3296582" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info id="Favorites" order="3" sideWeight="0.50164473" side_tool="true" weight="0.1796875" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,81 +719,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/wincondition/WinConditionChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/stream/Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3843">
-          <caret line="183" column="21" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/wincondition/NextToCheckResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/model/BoardEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/model/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/game/wincondition/WinConditionCheckerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javanashorntictactoe.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/game/wincondition/mock/BoardMocks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
@@ -880,20 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/wincondition/NextToCheckResolverFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/wincondition/CheckDirection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javanashorntictactoe.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -915,16 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/wincondition/NextToCheckResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -932,85 +882,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/GameManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/model/BoardPosition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/model/BoardEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/model/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/game/wincondition/WinConditionCheckerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
           <caret line="57" column="5" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/exception/GameException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/wincondition/WinConditionChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/game/wincondition/mock/BoardMocks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="61" column="61" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/game/move/RandomMoveStrategyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1040,14 +915,218 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/move_strategies/randomStrategy.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="12" column="68" lean-forward="true" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+          <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/wincondition/CheckDirection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/wincondition/NextToCheckResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/wincondition/NextToCheckResolverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/model/BoardEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/exception/GameException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/GameState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/wincondition/WinConditionChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="56" column="5" selection-end-line="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/drawcondition/DrawConditionChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/game/drawcondition/DrawConditionCheckerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="22" column="76" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
+          <folding>
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Abc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Abc.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Test.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/GameView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/event/BoardFieldClicked.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/event/BoardFieldClickedListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/model/BoardPosition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/game/move/RandomMoveStrategyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="19" column="100" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/game/wincondition/mock/BoardMocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/model/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/GameManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/board/BoardCanvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/GameView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-279">
+          <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#1989#1990#0" expanded="true" />
+            <element signature="e#2037#2038#0" expanded="true" />
+            <element signature="e#2085#2086#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="36" lean-forward="true" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+        <state relative-caret-position="105">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
         </state>
       </provider>
     </entry>

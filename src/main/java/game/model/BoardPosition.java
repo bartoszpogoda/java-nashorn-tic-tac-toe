@@ -42,4 +42,11 @@ public class BoardPosition {
         return Objects.hash(x, y);
     }
 
+    @Override
+    public String toString() {
+        return "BoardPosition{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }

@@ -69,4 +69,14 @@ public class BoardMocks {
 
         return boardMock;
     }
+
+    public static Board getDrawBoard() {
+        Board boardMock = Mockito.mock(Board.class);
+
+        when(boardMock.getSize()).thenReturn(5);
+
+        when(boardMock.getEntityAt(any())).thenReturn(BoardEntity.O);
+
+        return boardMock;
+    }
 }

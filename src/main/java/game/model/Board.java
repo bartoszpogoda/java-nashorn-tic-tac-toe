@@ -16,7 +16,7 @@ public class Board {
         clearBoard();
     }
 
-    private void clearBoard() {
+    public void clearBoard() {
         IntStream.range(0, boardState.length).forEach(x -> Arrays.fill(boardState[x], BoardEntity.EMPTY));
     }
 
@@ -26,5 +26,9 @@ public class Board {
 
     public BoardEntity getEntityAt(BoardPosition boardPosition) {
         return boardState[boardPosition.getX()][boardPosition.getY()];
+    }
+
+    public void setEntityAt(BoardPosition boardPosition, BoardEntity playerEntity) {
+        boardState[boardPosition.getX()][boardPosition.getY()] = playerEntity;
     }
 }
