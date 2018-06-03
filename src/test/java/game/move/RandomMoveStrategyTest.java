@@ -3,7 +3,6 @@ package game.move;
 import game.model.Board;
 import game.model.BoardEntity;
 import game.model.BoardPosition;
-import game.wincondition.WinConditionChecker;
 import game.wincondition.mock.BoardMocks;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -11,7 +10,6 @@ import org.junit.jupiter.api.Test;
 import javax.script.ScriptException;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -24,7 +22,7 @@ public class RandomMoveStrategyTest {
     @BeforeAll
     static void setUp() throws FileNotFoundException, ScriptException {
 
-        strategy = new MoveStrategyFromJSFile().load(new File(JS_FILENAME));
+        strategy = new MoveStrategyFromJSScriptLoader().load(new File(JS_FILENAME)).get();
     }
 
     @Test

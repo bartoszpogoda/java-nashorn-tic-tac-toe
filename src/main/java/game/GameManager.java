@@ -2,7 +2,9 @@ package game;
 
 
 import game.drawcondition.DrawConditionChecker;
+import game.exception.FieldOccupiedException;
 import game.exception.GameException;
+import game.exception.StrategyNotSetException;
 import game.model.Board;
 import game.model.BoardEntity;
 import game.model.BoardPosition;
@@ -45,24 +47,27 @@ public class GameManager {
             throw new GameException("5x5 is minimal size of the board");
         }
 
-        if (enemyMoveStrategy == null) {
-            throw new GameException("no strategy was set");
-        }
-
         this.gameBoard = new Board(boardSize);
     }
 
-    public void executePlayerMove(BoardPosition boardPosition) throws GameException {
+    public void executePlayerMove(BoardPosition boardPosition) throws StrategyNotSetException, FieldOccupiedException {
+
+        if(enemyMoveStrategy == null) {
+            throw new StrategyNotSetException();
+        }
 
         if (gameBoard.getEntityAt(boardPosition) != BoardEntity.EMPTY) {
-            throw new GameException("board field is not empty");
+            throw new FieldOccupiedException();
         }
 
         gameBoard.setEntityAt(boardPosition, playerEntity);
 
     }
 
-    public void executeAiMove() {
+    public void executeAiMove() throws StrategyNotSetException {
+        if(enemyMoveStrategy == null) {
+            throw new StrategyNotSetException();
+        }
         BoardPosition boardPosition = enemyMoveStrategy.nextMove(aiEntity, gameBoard);
 
         gameBoard.setEntityAt(boardPosition, aiEntity);

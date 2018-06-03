@@ -1,7 +1,8 @@
 import game.GameManager;
+import game.StrategyManager;
 import game.drawcondition.DrawConditionChecker;
 import game.move.MoveStrategy;
-import game.move.MoveStrategyFromJSFile;
+import game.move.MoveStrategyFromJSScriptLoader;
 import game.wincondition.WinConditionChecker;
 import gui.GameView;
 import javafx.application.Application;
@@ -29,9 +30,7 @@ public class App extends Application {
         GameManager gameManager = new GameManager(winConditionChecker, drawConditionChecker);
         gameManager.setBoardSize(10);
 
-        // temp
-        MoveStrategy strategy = new MoveStrategyFromJSFile().load(new File("src/main/resources/move_strategies/randomStrategy.js"));
-        gameManager.setEnemyMoveStrategy(strategy);
+        StrategyManager strategyManager = new StrategyManager(new MoveStrategyFromJSScriptLoader());
 
         // Construct GUI
         this.primaryStage = primaryStage;
@@ -45,6 +44,7 @@ public class App extends Application {
             GameView gameViewController = (GameView) loader.getController();
             gameViewController.setStage(primaryStage);
             gameViewController.setGameManager(gameManager);
+            gameViewController.setStrategyManager(strategyManager);
             gameViewController.startNewGame();
 
             Scene scene = new Scene(mainLayout);
