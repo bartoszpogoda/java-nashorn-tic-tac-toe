@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a71a306-e4b7-4f78-bd6e-6775e0449ba9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/StrategyManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/exception/FieldOccupiedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/exception/StrategyNotSetException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/move_strategies/firstAvailableStrategy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/move_strategies/minimaxStrategy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/move/MoveStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/move/MoveStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/move/MoveStrategyFromJSFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/move/MoveStrategyFromJSScriptLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/GameView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/GameView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/GameView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/move_strategies/randomStrategy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/move_strategies/randomStrategy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/game/move/RandomMoveStrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/game/move/RandomMoveStrategyTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="GameManager.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/game/GameManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="494">
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2522#2523#0" expanded="true" />
@@ -74,18 +63,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandomMoveStrategyTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/game/move/RandomMoveStrategyTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GameView.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/GameView.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
@@ -96,20 +73,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="randomStrategy.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/move_strategies/randomStrategy.js">
+      <file leaf-file-name="firstAvailableStrategy.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/move_strategies/firstAvailableStrategy.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            <state relative-caret-position="231">
+              <caret line="11" column="24" selection-end-line="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="firstAvailableStrategy.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/move_strategies/firstAvailableStrategy.js">
+      <file leaf-file-name="minimaxStrategy.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/move_strategies/minimaxStrategy.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="367">
+              <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
+              <folding>
+                <element signature="e#648#686#0" />
+                <element signature="e#1243#1259#0" />
+                <element signature="e#925#941#0" />
+                <element signature="e#912#974#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MethodHandleImpl.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/invoke/MethodHandleImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="355" selection-start-line="355" selection-end-line="355" />
             </state>
           </provider>
         </entry>
@@ -117,8 +109,8 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="294">
+              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -149,12 +141,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="FxmlFile" />
         <option value="JavaFXApplication" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -222,8 +214,9 @@
         <option value="$PROJECT_DIR$/src/main/java/gui/GameView.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/game/exception/StrategyNotSetException.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/GameView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/GameManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/App.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/move_strategies/minimaxStrategy.js" />
       </list>
     </option>
   </component>
@@ -296,7 +289,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="move" type="462c0819:PsiDirectoryNode" />
+              <item name="drawcondition" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javanashorntictactoe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javanashorntictactoe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javanashorntictactoe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javanashorntictactoe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="wincondition" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javanashorntictactoe" type="b2602c69:ProjectViewProjectNode" />
@@ -610,7 +621,7 @@
       <workItem from="1527880915613" duration="253000" />
       <workItem from="1527881676258" duration="6769000" />
       <workItem from="1527973126287" duration="7204000" />
-      <workItem from="1528017847064" duration="6134000" />
+      <workItem from="1528017847064" duration="13525000" />
     </task>
     <servers />
   </component>
@@ -647,7 +658,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31727000" />
+    <option name="totallyTimeSpent" value="39118000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -672,18 +683,18 @@
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.3296582" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.33958104" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.20727673" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.31863284" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49944875" visible="true" weight="0.21979167" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4983462" visible="true" weight="0.26302084" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="7" />
       <window_info id="Structure" order="6" sideWeight="0.5005513" side_tool="true" weight="0.1796875" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info id="Favorites" order="3" sideWeight="0.50164473" side_tool="true" weight="0.1796875" />
+      <window_info id="Favorites" order="3" sideWeight="0.5016538" side_tool="true" weight="0.21979167" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.39911798" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -696,32 +707,32 @@
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="4" weight="0.3296582" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49944875" weight="0.1796875" />
-      <window_info id="Structure" order="6" sideWeight="0.5005513" side_tool="true" weight="0.1796875" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="REST Client" order="0" weight="0.44211686" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.14884233" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4983462" visible="true" weight="0.21979167" />
+      <window_info id="Structure" order="6" sideWeight="0.5005513" side_tool="true" weight="0.1796875" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info anchor="bottom" id="TODO" order="12" weight="0.3296582" />
-      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.3296582" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="REST Client" order="0" weight="0.44211686" />
-      <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.39911798" />
-      <window_info anchor="right" id="Palette&#9;" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.3296582" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info id="UI Designer" order="1" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.31863284" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.3296582" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.39911798" />
       <window_info id="Capture Tool" order="2" />
-      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="5" weight="0.3296582" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info id="Favorites" order="3" sideWeight="0.50164473" side_tool="true" weight="0.1796875" />
+      <window_info id="Favorites" order="3" sideWeight="0.5016538" side_tool="true" weight="0.21979167" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -736,26 +747,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/model/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/game/wincondition/WinConditionCheckerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -927,6 +918,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="22" column="76" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
+          <folding>
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -958,16 +953,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1344">
           <caret line="71" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/model/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1069,13 +1054,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/move_strategies/firstAvailableStrategy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/GameView.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
@@ -1109,21 +1087,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/move_strategies/firstAvailableStrategy.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="231">
+          <caret line="11" column="24" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/invoke/MethodHandleImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="355" selection-start-line="355" selection-end-line="355" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/model/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/game/GameManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="494">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2522#2523#0" expanded="true" />
             <element signature="e#2580#2581#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/move_strategies/minimaxStrategy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
+          <folding>
+            <element signature="e#648#686#0" />
+            <element signature="e#1243#1259#0" />
+            <element signature="e#925#941#0" />
+            <element signature="e#912#974#0" />
           </folding>
         </state>
       </provider>

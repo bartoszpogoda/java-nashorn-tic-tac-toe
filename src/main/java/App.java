@@ -28,7 +28,7 @@ public class App extends Application {
         DrawConditionChecker drawConditionChecker = new DrawConditionChecker();
 
         GameManager gameManager = new GameManager(winConditionChecker, drawConditionChecker);
-        gameManager.setBoardSize(10);
+        gameManager.setBoardSize(6);
 
         StrategyManager strategyManager = new StrategyManager(new MoveStrategyFromJSScriptLoader());
 
